@@ -3,32 +3,57 @@ export default defineNuxtConfig({
   // https://nuxt.com/modules
   modules: [
     '@nuxthub/core',
-    '@nuxt/eslint',
+    '@vueuse/nuxt',
+    '@pinia/nuxt',
+    "@nuxtjs/tailwindcss",
+    '@nuxt/image',
   ],
 
-  // https://devtools.nuxt.com
-  devtools: { enabled: true },
+  devtools: {
+    enabled: false,
+  },
 
-  // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
-  runtimeConfig: {
-    public: {
-      // Can be overridden by NUXT_PUBLIC_HELLO_TEXT environment variable
-      helloText: 'Hello from the Edge 👋',
+  app: {
+    head: {
+      viewport: 'width=device-width,initial-scale=1',
+      link: [
+        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+        // { rel: 'icon', type: 'image/svg+xml', href: '/nuxt.svg' },
+        // { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+      ],
+      title:'Hello Blog',
+      script:[
+      ],
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: "" },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+      ],
     },
   },
-  // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
-  future: { compatibilityVersion: 4 },
-  compatibilityDate: '2024-07-30',
+  css: [
+    '~/styles/global.css',
+  ],
+  tailwindcss: {
+    cssPath: ['~/styles/tailwind.css', { injectPosition: "first" } ],
+    configPath: 'tailwind.config',
+    viewer: false
+  },
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  experimental: {
+    // when using generate, payload js assets included in sw precache manifest
+    // but missing on offline, disabling extraction it until fixed
+    payloadExtraction: false,
+    renderJsonPayloads: true,
+    typedPages: true,
+  },
+  compatibilityDate: '2024-08-14',
 
   // https://hub.nuxt.com/docs/getting-started/installation#options
   hub: {},
-
-  // https://eslint.nuxt.com
-  eslint: {
-    config: {
-      stylistic: {
-        quotes: 'single',
-      },
-    },
-  },
+ 
 })
