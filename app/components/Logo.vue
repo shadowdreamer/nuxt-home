@@ -1,5 +1,5 @@
 <template lang="pug">
-div 🫡
+NuxtLink.text-2xl(to="/") 🫡
 </template>
 <script setup lang="ts">
 
