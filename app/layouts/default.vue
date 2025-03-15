@@ -1,7 +1,7 @@
 <template lang="pug">
 SiteNav
 main
-  slot
+  NuxtPage
 </template>
 <script setup lang="ts">
 

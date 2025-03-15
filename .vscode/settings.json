@@ -13,5 +13,6 @@
     "source.organizeImports": "never"
   },
   "iconify.annotations": true,
-  "iconify.inplace": true
+  "iconify.inplace": true,
+  "vue3snippets.enable-compile-vue-file-on-did-save-code": false
 }

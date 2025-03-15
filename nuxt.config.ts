@@ -1,12 +1,13 @@
+import { defineContentConfig, defineCollection } from '@nuxt/content'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/modules
   modules: [
     '@nuxthub/core',
     '@vueuse/nuxt',
-    '@pinia/nuxt',
     "@nuxtjs/tailwindcss",
     '@nuxt/image',
+    '@nuxt/content'
   ],
 
   devtools: {
@@ -33,13 +34,13 @@ export default defineNuxtConfig({
   },
   css: [
     '~/styles/global.css',
+    '~/styles/blog.css',
   ],
   tailwindcss: {
     cssPath: ['~/styles/tailwind.css', { injectPosition: "first" } ],
     configPath: 'tailwind.config',
     viewer: false
   },
-
   future: {
     compatibilityVersion: 4,
   },
