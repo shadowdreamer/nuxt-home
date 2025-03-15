@@ -14,8 +14,5 @@ const { data: home } = await useAsyncData(() =>
   queryCollection('blog')
   .all()
 );
-onMounted(() =>{
-  console.log(home)
-})
 </script>
 <style></style>

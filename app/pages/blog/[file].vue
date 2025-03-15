@@ -8,8 +8,12 @@ definePageMeta({
   layout:'blog'
 })
 const route = useRoute()
-const { data } = await useAsyncData(route.path, () => {
+const { data,execute } = await useAsyncData(route.path, () => {
   return queryCollection('blog').path(route.path).first()
+} )
+
+onMounted(() =>{
+  if(!data.value)execute();
 })
 </script>
 <style>

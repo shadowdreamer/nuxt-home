@@ -57,7 +57,7 @@ export default defineNuxtConfig({
     routeRules: {
       "/": { prerender: true },
       "/about": { prerender: true },
-      "/blog/**": { prerender: true },
+      "/blog/**": { swr:3600 },
     },
   },
   // https://hub.nuxt.com/docs/getting-started/installation#options
