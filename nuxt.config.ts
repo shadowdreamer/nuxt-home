@@ -53,8 +53,16 @@ export default defineNuxtConfig({
     typedPages: true,
   },
   compatibilityDate: '2024-08-14',
-
+  nitro:{
+    routeRules: {
+      "/": { prerender: true },
+      "/about": { prerender: true },
+      "/blog/**": { prerender: true },
+    },
+  },
   // https://hub.nuxt.com/docs/getting-started/installation#options
-  hub: {},
+  hub: {
+    
+  },
  
 })
