@@ -1,7 +1,8 @@
 <template lang="pug">
 .py-12
-  h2.text-2xl.font-semibold.mb-8 {{data?.title}}
-  ContentRenderer(v-if="data" :value="data" class='blog')
+  h2.text-2xl.font-semibold.mb-2 {{data?.title}}
+  p.mb-8.text-gray-500.text-sm {{data?.meta.date}}
+  ContentRenderer(v-if="data" :value="data" class='blog') 
 </template>
 <script setup lang="ts">
 definePageMeta({
