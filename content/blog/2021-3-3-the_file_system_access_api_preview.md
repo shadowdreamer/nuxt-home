@@ -12,13 +12,13 @@ tags:
 
 ## 对 File System Access API 进行一个瞧
 
-大致看了下，这个api可以读取文件和文件夹，并且枚举文件夹内容，修改文件并保存，所有操作都是 promise 形式， 因此写下来一堆 await，另外 api 有 [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/) 限制，只能在https环境下使用。另外这个api只支持 chrome 86+ ，说不定以后还会改掉。
+大致看了下，这个api可以读取文件和文件夹，并且枚举文件夹内容，修改文件并保存，所有操作都是 promise 形式， 因此写下来一堆 await，另外 api 有 [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/){:target="_blank"} 限制，只能在https环境下使用。另外这个api只支持 chrome 86+ ，说不定以后还会改掉。
 
-> wicg 草案：<https://wicg.github.io/file-system-access/>
+> wicg 草案：https://wicg.github.io/file-system-access 
 >
 > MDN 的文档： <https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API>
 >
-> web.dev 的介绍： <https://web.dev/file-system-access/>
+> web.dev 的介绍： <https://web.dev/file-system-access>
 
 api使用大概都是这样：
 

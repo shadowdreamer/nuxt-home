@@ -1,5 +1,5 @@
 <template lang="pug">
-div F:\hoby\nuxt-home\app\pages\about.vue
+div dovahkiin
 </template>
 <script setup lang="ts"></script>
 <style></style>

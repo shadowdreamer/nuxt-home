@@ -1,6 +1,6 @@
 <template lang="pug">
 SiteNav
-main
+main(class='main-container mx-auto')
   NuxtPage
 </template>
 <script setup lang="ts">

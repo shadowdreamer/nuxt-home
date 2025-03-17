@@ -9,7 +9,7 @@
     @apply leading-loose first-letter:ml-8
   }
   blockquote{
-    @apply border-l-4 border-gray-300 pl-4;
+    @apply border-l-4 border-gray-300;
   }
   ul{
     @apply list-disc pl-8; 
@@ -37,11 +37,11 @@
    }
    pre{
     code{
-      @apply bg-gray-100 p-4 rounded-lg block;
+      @apply bg-gray-100 p-4 rounded-sm block;
     }
    }
    code{
-    @apply bg-gray-100 p-1 rounded-lg;
+    @apply bg-gray-100 p-1 rounded-sm;
    }
 
 }
