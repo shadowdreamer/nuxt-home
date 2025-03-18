@@ -1,10 +1,10 @@
 <template lang="pug">
-SiteNav
-main(class='main-container mx-auto')
-  NuxtPage
+.text-gray-400
+  .container
+    Copyright &copy;  2023
+     
 </template>
 <script setup lang="ts">
-usePinNavi();
 
 </script>
 <style>

@@ -23,5 +23,7 @@ main(class='main-container mx-auto')
 <script setup lang="ts">
 import Giscus from "@giscus/vue";
 const isProd = import.meta.env.PROD;
+usePinNavi();
+
 </script>
 <style></style>

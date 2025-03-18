@@ -1,8 +1,9 @@
 <template lang="pug">
-.py-12
+.py-12(v-if="data")
   h2.text-2xl.font-semibold.mb-2 {{data?.title}}
   p.mb-8.text-gray-500.text-sm {{data?.meta.date}}
   ContentRenderer(v-if="data" :value="data" class='blog') 
+
 </template>
 <script setup lang="ts">
 definePageMeta({
@@ -18,7 +19,11 @@ useSeoMeta({
 })
 
 onMounted(() =>{
-  if(!data.value)execute();
+  if(!data.value)execute().then(()=>{
+    if(!data.value){
+      navigateTo('/404')
+    }
+  })
   openAtagBlank()
 })
 function openAtagBlank(){

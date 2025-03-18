@@ -20,6 +20,10 @@ module.exports = {
         takane:'#a6126a',
         
       },
+      fontFamily: {
+        'archivo': ['Archivo Black', 'sans-serif'],
+        'noto-emoji':['Noto Color Emoji','sans-serif']
+      },
     },
   },
 }

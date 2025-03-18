@@ -1,10 +1,7 @@
 <template lang="pug">
-SiteNav
-main(class='main-container mx-auto')
-  NuxtPage
+div E:\nuxt-home\app\components\side\profile.vue
 </template>
 <script setup lang="ts">
-usePinNavi();
 
 </script>
 <style>

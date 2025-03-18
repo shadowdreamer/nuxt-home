@@ -6,11 +6,6 @@ export default ()=>{
   });
   function initNavPin() {
     const {$gsap} = useNuxtApp()
-    $gsap.set("#app-nav", {
-      backgroundColor: "transparent",
-      duration: 0.2,
-      ease: Power0.easeOut,
-    });
     let trigger = ScrollTrigger.create({
       trigger: "#app-nav",
       pin: true,
@@ -19,13 +14,9 @@ export default ()=>{
       end: "max",
       onUpdate: (self) => {             
         if (self.progress > 0.01) {
-          $gsap.to("#app-nav", {
-            backgroundColor: "#ffffff",
-          });
+          
         } else {
-          $gsap.to("#app-nav", {
-            backgroundColor: "transparent",
-          });
+
         }
       },
     });
