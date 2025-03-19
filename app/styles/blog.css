@@ -22,7 +22,7 @@
     @apply mb-2; 
   }
   a{
-    @apply text-purple-500; 
+    @apply text-takane; 
     &:hover{
       @apply underline underline-offset-4;
     }

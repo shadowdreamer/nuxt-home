@@ -18,6 +18,7 @@ module.exports = {
         mauve,
         whiteA,
         takane:'#a6126a',
+        takane33:'var(--color-takane33)',
         
       },
       fontFamily: {
