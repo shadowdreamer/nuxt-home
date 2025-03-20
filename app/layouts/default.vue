@@ -2,6 +2,7 @@
 SiteNav
 main(class='main-container mx-auto')
   NuxtPage
+Footer
 </template>
 <script setup lang="ts">
 usePinNavi();

@@ -8,8 +8,8 @@ export default ()=>{
     
     const {$gsap} = useNuxtApp();
     $gsap.set("#app-nav", {
-      background: "linear-gradient(0deg,  rgba(255,255,255,0) 20%, rgba(0,0,0,0.2) 100%)",
-      color: "#333",
+      background: "#333",
+      color: "#fff",
       duration: 0.2,
       ease: Power0.easeOut,
     });
@@ -19,25 +19,24 @@ export default ()=>{
       pinSpacing: false,
       start: "top",
       end: "max",
-      id: "nav",
-      markers: true,
       onUpdate: (self) => {             
         if (self.progress > 0.01) {
           $gsap.to("#app-nav", {
-            background: "linear-gradient(0deg, rgba(255,255,255, 0.6) 20%, rgba(255,255,255, 0.0) 100%)",
-            color: "#333",
+            background: "rgba(0,0,0,0.6)",
+            color: "#fff",
           });
         } else {
           $gsap.to("#app-nav", {
-            background: "linear-gradient(0deg, rgba(255,255,255,0) 20%, rgba(0,0,0,0.2) 100%)",
-            color: "#333",
+            background: "#333",
+            color: "#fff",
           });
         }
       },
     });
     function handleResize() {
       ScrollTrigger.refresh();
-      console.log("resize");
+      console.log("resize",ScrollTrigger);
+
       
     }
     const th = throttle(handleResize,500)

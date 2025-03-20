@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Color+Emoji&display=swap');
+@import '@unocss/reset/tailwind.css';
+
 html,body{
   color:#333333;
   line-height: 1.5em;
@@ -23,6 +25,15 @@ html,body{
   :root {
     --main-width: 1440px;
   }
+}
+@media screen and (max-width: 1280px) {
+  :root {
+    --main-width: 100vw;
+    --main-min-width: 100vw;
+   }
+   .main-container{
+    @apply px-4;
+   }
 }
 .main-container {
   width: var(--main-width);
