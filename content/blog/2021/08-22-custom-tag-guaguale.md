@@ -3,6 +3,7 @@ title: 100行js写一个刮刮乐效果的自定义元素
 date: 2021-12-08
 tags:
   - web
+  - boring
 ---
 
 Check out the live demo [here](https://guaguale.netlify.app/).
