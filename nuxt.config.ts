@@ -54,6 +54,7 @@ export default defineNuxtConfig({
       "/diary": { prerender: true },
       "/about": { prerender: true },
       "/blog/**": { prerender: true },
+      "/resume": { prerender: true },
     },
     prerender: {
       crawlLinks: true 
