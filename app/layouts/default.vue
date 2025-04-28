@@ -1,9 +1,10 @@
 <template lang="pug">
 SiteNav
 main(class='main-container mx-auto')
-  .flex.gap-8.items-start
+  .flex.gap-8.items-start.relative
+    
     NuxtPage
-    SideProfile
+    SideProfile.sticky.top-20
 Footer
 </template>
 <script setup lang="ts">

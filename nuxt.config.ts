@@ -51,6 +51,7 @@ export default defineNuxtConfig({
   nitro:{
     routeRules: {
       "/": { prerender: true },
+      "/diary": { prerender: true },
       "/about": { prerender: true },
       "/blog/**": { prerender: true },
     },

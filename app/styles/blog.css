@@ -6,14 +6,20 @@
   h2{
     @apply text-xl font-semibold mt-10 mb-4;
   }
+  h3{
+    @apply text-lg font-semibold mt-10 mb-4;
+  }
+  h4{
+    @apply text-lg  mt-10 mb-4;
+  }
   p {
     @apply leading-loose first-letter:ml-8 mb-2
   }
   blockquote{
-    @apply border-l-4 border-gray-300;
+    @apply text-sm  bg-gray-50 p-2 my-2 border-gray-300 first-letter:pl-0;
   }
   ul{
-    @apply list-disc pl-8; 
+    @apply list-disc pl-8 mb-10; 
   }
   ol{
     @apply list-decimal pl-8; 
