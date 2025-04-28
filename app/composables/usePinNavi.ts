@@ -5,7 +5,14 @@ export default ()=>{
     initNavPin();
   });
   function initNavPin() {
-    const {$gsap} = useNuxtApp()
+    
+    const {$gsap} = useNuxtApp();
+    $gsap.set("#app-nav", {
+      background: "#333",
+      color: "#fff",
+      duration: 0.2,
+      ease: Power0.easeOut,
+    });
     let trigger = ScrollTrigger.create({
       trigger: "#app-nav",
       pin: true,
@@ -14,14 +21,23 @@ export default ()=>{
       end: "max",
       onUpdate: (self) => {             
         if (self.progress > 0.01) {
-          
+          $gsap.to("#app-nav", {
+            background: "rgba(0,0,0,0.6)",
+            color: "#fff",
+          });
         } else {
-
+          $gsap.to("#app-nav", {
+            background: "#333",
+            color: "#fff",
+          });
         }
       },
     });
     function handleResize() {
       ScrollTrigger.refresh();
+      console.log("resize",ScrollTrigger);
+
+      
     }
     const th = throttle(handleResize,500)
     window.addEventListener('resize', th);

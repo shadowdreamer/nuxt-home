@@ -11,12 +11,12 @@
 </template>
 <script setup lang="ts">
 const { data: home } = await useAsyncData(() =>
-  queryCollection('blog')
+  queryCollection('diary')
   .order('path', 'DESC')
   .all()
 );
 </script>
-<style lang="postcss">
+<style >
 .post-link{
   @apply relative;
   .back{
@@ -25,7 +25,7 @@ const { data: home } = await useAsyncData(() =>
   &:hover {
     .front{
       @apply transition-all;
-      transform: translate(-8px,8px);
+      transform: translate(-8px,8px), scale(0.8,0.8);
     }
     .back{
       @apply transition-all;

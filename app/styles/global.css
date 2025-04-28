@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Color+Emoji&display=swap');
+@import '@unocss/reset/tailwind.css';
+
 html,body{
   color:#333333;
   line-height: 1.5em;
@@ -12,6 +14,7 @@ html,body{
 :root {
   --main-width: 1440px;
   --main-min-width: 1440px;
+  --color-takane33:#a6126b33;
 }
 @media screen and (min-width: 1920px) {
   :root {
@@ -23,9 +26,22 @@ html,body{
     --main-width: 1440px;
   }
 }
+@media screen and (max-width: 1280px) {
+  :root {
+    --main-width: 100vw;
+    --main-min-width: 100vw;
+   }
+   .main-container{
+    @apply px-4;
+   }
+}
 .main-container {
   width: var(--main-width);
   min-width: var(--main-min-width);
   margin: 0 auto;
+}
+
+.bg-texture {
+ @apply bg-[image:repeating-linear-gradient(315deg,_var(--color-takane33)_0,_var(--color-takane33)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed ;
 }
  

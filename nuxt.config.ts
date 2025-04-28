@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxthub/core',
     '@vueuse/nuxt',
-    "@nuxtjs/tailwindcss",
+    '@unocss/nuxt',
     '@nuxt/content'
   ],
 
@@ -35,11 +35,7 @@ export default defineNuxtConfig({
     '~/styles/global.css',
     '~/styles/blog.css',
   ],
-  tailwindcss: {
-    cssPath: ['~/styles/tailwind.css', { injectPosition: "first" } ],
-    configPath: 'tailwind.config',
-    viewer: false
-  },
+
   future: {
     compatibilityVersion: 4,
   },
@@ -55,13 +51,22 @@ export default defineNuxtConfig({
   nitro:{
     routeRules: {
       "/": { prerender: true },
+      "/diary": { prerender: true },
       "/about": { prerender: true },
-      "/blog/**": { swr:3600 },
+      "/blog/**": { prerender: true },
+      "/resume": { prerender: true },
     },
+    prerender: {
+      crawlLinks: true 
+    }
   },
   // https://hub.nuxt.com/docs/getting-started/installation#options
   hub: {
     
+  },
+  runtimeConfig: {
+    public: {
+      commitHash: process.env.NITRO_COMMIT_HASH || 'unknown'
+    }
   }
- 
 })

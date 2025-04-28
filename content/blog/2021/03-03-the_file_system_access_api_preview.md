@@ -1,8 +1,6 @@
 ---
 title: 用 file system access api 批量储存文件
 date: 2021-03-03
-categories:
-  - 技术
 tags:
   - web
 ---
