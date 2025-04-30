@@ -15,7 +15,8 @@ export default defineConfig({
   ],
   theme: {
     container:{
-      center:true
+      center:true,
+      padding:'1.5em'
     },
     colors: {
       blackA,
