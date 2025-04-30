@@ -1,8 +1,36 @@
 # 景富剑的前端简历
 
-## 职业目标
+## 核心技能
 
-> 致力于在前端开发领域持续成长，擅长构建高性能、可维护的Web应用和跨平台小程序，期望在创新型项目中发挥技术专长，推动产品成功。
+- 原生JS基础扎实，关注ECMAScript最新标准，熟知CSS3最新标准，有丰富浏览器兼容经验。
+
+- 精通Vue全家桶，熟练使用Vue3开发，熟练使用和部署Nuxt3，构建CEO友好网站；有丰富Vuetify、Element、Ant Design等主流组件库使用经验。
+
+- 熟练使用React 16+，掌握Hooks API，熟悉Umi.js、Next.js等React生态系统。
+
+- 熟练使用TailwindCSS、UNOCSS等原子化库，熟悉GSAP,Anime.js等各类动画库，善于制作交互友好的UI页面与动态效果。
+
+- 熟练使用Typescript进行类型体操，在团队开发中规范类型提高多人协作效率。
+
+- 精通Uniapp和Taro.js以及小程序原生API，能够独立开发跨平台小程序，熟悉小程序上架流程。
+
+- 熟练使用ECharts、AntV等数据可视化库，了解WebGL、Three.js等3D图形技术。
+
+- 熟练使用Git，SVN进行版本控制，对使用Webpack、Vite等构建工具进行项目打包和优化有丰富经验。
+
+- 熟练使用Nodejs开发数据中台，了解MySQL与PostgreSQL等数据库，熟悉Strapi CMS。
+
+- 熟练使用Docker、PM2等部署工具，熟悉Jenkins等CI/CD部署工作流。
+
+- 有丰富阿里云、AWS、Vercel、CloudFlare、Netlify、Firebase等平台使用经验，熟悉Ubuntu、Debian等Linux系统使用。
+
+- 熟悉Python语法，熟悉当前AI社区生态，能够将AI技术应用于前端开发。
+
+- 能独立部署AI应用，有训练模型经验（如RVC声库、Stable Diffusion Lora）。
+
+- 了解C#、Fullter、Pyside6等其他平台UI开发套件。
+
+- 积极参与开源项目开发，持续关注前端技术最新动态，擅长快速学习并应用新技术。
 
 ## 主要经历
 
@@ -12,9 +40,9 @@
 
 * 使用Nuxt3搭建SSR架构网站,提升加载速度与SEO表现。
 
-* 运用Tailwind CSS快速构建高质量UI,提升开发效率。
+* 运用Tailwind-CSS与Radix-VUE快速构建高质量UI。
 
-* 独立完成站点设计、开发、部署与后续维护工作。
+* 独立完成站点开发、部署工作。
 
 ### 2023-2024 南通骏星科技·远程开发
 
@@ -33,8 +61,8 @@
 * 样式与用户体验:
 使用Tailwind CSS进行样式开发，大幅提高开发效率，确保网站排版与动效的丰富性和响应性，积极响应客户需求并持续完善网站功能。
 
-####  如皋如i行综合平台
-> 负责如皋如i行的前后端开发工作，项目涵盖微信小程序、APP司机端、设备端广告互动页面，采用uniapp进行开发。
+####  如皋如意行综合平台
+> 负责如皋如意行的前后端开发工作，项目涵盖微信小程序、APP司机端、设备端广告互动页面，采用uniapp进行开发。
 
 * 主导选择uniapp作为开发框架，成功构建了跨平台的微信小程序和APP司机端，积累了丰富的uniapp开发经验。
 * 负责实现打车平台的核心功能，包括用户下单、司机接单、实时定位等模块，确保平台的高效稳定运行。
@@ -51,7 +79,7 @@
 ### 南通骏星科技 2019-2022
 
 #### 2021-2022年 智能笔练字系统App嵌入页面以及管理后台开发维护
-> 开发应用的嵌入H5页面及其后台管理系统，应用启动页面使用AntV图表库按需引入实现轻量级图表展示，并使用原生Canvas API实现笔记数据的展示与回放，模拟笔锋效果。后台管理系统基于Ant Design（antd）框架搭建，通过用户权限系统区分B端和C端用户及各级别管理员权限。
+> 开发应用的嵌入H5页面及其后台管理系统，使用AntV图表库按需引入实现轻量级图表展示，并使用原生Canvas API实现笔记数据的展示与回放，模拟笔锋效果。后台管理系统基于Ant Design（antd）框架搭建，通过用户权限系统区分B端和C端用户及各级别管理员权限。
 
 * AntV: 按需引入图表库，实现轻量级图表展示。
 * Canvas API: 实现笔记数据展示与回放，模拟笔锋效果。
@@ -94,38 +122,10 @@
 * 优化H5页面的用户体验，确保在不同移动设备上的兼容性和响应速度。
 
 
-## 核心技能
-
-* 精通Vue全家桶，熟练使用Vue 3进行开发，熟练运用Vuetify、Element-UI、Ant Design等主流组件库。熟练使用和部署Nuxt3，构建CEO友好网站。
-
-* 熟练使用React 16+，掌握Hooks API，熟悉Umi.js、Redux等React生态系统。
-
-* 熟练使用TailwindCSS、UNOCSS等现代前端技术，熟悉GSAP等各类动画库，善于制作交互友好的UI页面。
-
-* 熟练使用Typescript进行类型体操，在团队开发中规范类型提高多人协作效率。
-
-* 精通uniapp和Taro.js，能够独立开发跨平台小程序，熟悉小程序上架流程。
-
-* 熟练使用Echarts、AntV等数据可视化库，了解WebGL、Three.js等3D图形技术。
-
-* 熟练使用Git，SVN进行版本控制，擅长使用Webpack、Vite等构建工具进行项目打包和优化。
-
-## 其他:
-
-* 熟悉Python，熟悉当前AI社区生态，能够将AI技术应用于前端开发。
-
-* 能独立部署AI应用，有训练大模型经验（如RVC声库、Stable Diffusion Lora）。
-
-* 熟悉使用Nodejs开发数据中台，了解各类sql数据库。
-
-* 了解c#、fullter、pyside6等其他UI开发平台套件。
-
-* 积极参与开源项目开发，持续关注前端技术最新动态，擅长快速学习并应用新技术。
-
 **个人信息** | -
 --- | ---
 学历 | 本科 - 南京工业大学 - 安全工程  
-手机/微信 | 15366346765  
+手机/微信 | [15366346765](tel:15366346765)    
 邮箱 | [hire@dovahkiin.top](mailto:hire@dovahkiin.top)  
 个人主页 | [https://hire.dovahkiin.top](https://hire.dovahkiin.top)  
 技术标签 | Vue, Uniapp, JavaScript, Node.js, Tailwind.css, React  

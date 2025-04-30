@@ -1,8 +1,9 @@
 <template lang="pug">
-.py-12(v-if="data")
-  p.mb-8.text-gray-500.text-sm {{data?.meta.date}}
-  ContentRenderer(v-if="data" :value="data" class='blog') 
-
+.flex.items-start.relative.gap-8
+  .py-12(v-if="data")
+    p.mb-8.text-gray-500.text-sm {{data?.meta.date}}
+    ContentRenderer(v-if="data" :value="data" class='blog') 
+  SideProfileHire.sticky.top-20
 </template>
 <script setup lang="ts">
 definePageMeta({
@@ -14,7 +15,7 @@ const { data,execute } = await useAsyncData(route.path, () => {
 } )
 useSeoMeta({
   title: ()=>data.value?.title || 'blog',
-  description : ()=>data.value?.description || 'blog',
+  description : ()=>'景富剑的前端简历，前端工程师简历',
 })
 
 onMounted(() =>{

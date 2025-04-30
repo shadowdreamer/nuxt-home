@@ -11,6 +11,7 @@ export default ()=>{
       background: "#333",
       color: "#fff",
       duration: 0.2,
+      height:80,
       ease: Power0.easeOut,
     });
     let trigger = ScrollTrigger.create({
@@ -24,11 +25,14 @@ export default ()=>{
           $gsap.to("#app-nav", {
             background: "rgba(0,0,0,0.6)",
             color: "#fff",
+            height:50,
+
           });
         } else {
           $gsap.to("#app-nav", {
             background: "#333",
             color: "#fff",
+            height:80,
           });
         }
       },
