@@ -3,7 +3,7 @@
   .py-12(v-if="data")
     p.mb-8.text-gray-500.text-sm {{data?.meta.date}}
     ContentRenderer(v-if="data" :value="data" class='blog') 
-  SideProfileHire.sticky.top-20
+  SideProfileHire.sticky.top-20(class="max-md:hidden")
 </template>
 <script setup lang="ts">
 definePageMeta({
