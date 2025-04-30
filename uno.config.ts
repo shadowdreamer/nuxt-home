@@ -14,6 +14,9 @@ export default defineConfig({
     extractorPug(),
   ],
   theme: {
+    container:{
+      center:true
+    },
     colors: {
       blackA,
       green,

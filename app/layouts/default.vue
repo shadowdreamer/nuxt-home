@@ -1,6 +1,6 @@
 <template lang="pug">
 SiteNav
-main(class='main-container mx-auto')
+main(class='container mx-auto')
   .flex.gap-8.items-start.relative
     
     NuxtPage
