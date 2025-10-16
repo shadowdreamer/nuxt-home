@@ -66,7 +66,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      commitHash: process.env.NITRO_COMMIT_HASH || 'unknown'
+      commitHash: process.env.NITRO_COMMIT_HASH || 'unknown',
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://blog.dovahkiin.top'
     }
-  }
+  },
 })

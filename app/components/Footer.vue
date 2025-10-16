@@ -1,10 +1,22 @@
 <template lang="pug">
+
 footer.text-gray-400.container.py-10
-  .mb-2.text-sm @CureDovahkiin &copy;  2021~{{ new Date().getFullYear() }}   
-  p.text-xs Hand made with Nuxt.js & Tailwindcss Powered on NuxtHub
+  div(class="w-full md:w-[75%] max-w-[1444px] mx-auto text-sm flex flex-row-reverse justify-between")
+    SideProfile
+    div
+      .mb-2.font-mono
+        | CC BY-NC-SA 4.0 2021~{{ new Date().getFullYear() }}  © CureDovahkiin  
+      a.font-mono.mb-2.inline-flex.items-center(class="hover:underline" href="mailto:hi@dovahkiin.top") 
+        Icon.size-4.mr-2(icon="carbon:email")
+        span hi@dovahkiin.top   
+      
+ 
+      
+      p.font-mono Hand made with Nuxt.js & Tailwindcss Powered on NuxtHub
      
 </template>
 <script setup lang="ts">
+import { Icon  } from "@iconify/vue";
 
 </script>
 <style>

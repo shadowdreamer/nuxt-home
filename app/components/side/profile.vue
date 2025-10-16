@@ -1,18 +1,18 @@
 <template lang="pug">
-.border.border-gray-300.p-4.w-160.flex-grow-0
-  .flex.gap-4.justify-end.mb-4
-    a.flex.flex-col.items-center.gap-1.p-2.rounded-md.w-14(
-      class="hover:bg-gray-100"
-       v-for="item in socials" target="_blank" :href="item.href")
-      Icon.size-6(:icon="item.logo")
-      .text-xs.whitespace-nowrap {{ item.name }}
-  .ml-12.border-b.border-gray-300.my-4
-  a.text-xs.text-right.mb-2.flex.items-center.gap-1.justify-end(
-    class="hover:underline"
-     href="mailto:hi@dovahkiin.top") 
-    icon.size-4(icon="carbon:email")
-    span hi@dovahkiin.top    
-  a.text-xs.text-right.block(target="_blank" href="https://x.com/CureDovahkiin" referrerpolicy="no-referrer") @CureDovahkiin
+
+.flex.gap-4.mb-4
+  a.flex.flex-col.items-center.gap-1.p-2.rounded-md.w-14(
+    class="hover:bg-gray-100"
+      v-for="item in socials" target="_blank" :href="item.href")
+    Icon.size-6(:icon="item.logo")
+    .text-xs.whitespace-nowrap {{ item.name }}
+  //- .ml-12.border-b.border-gray-300.my-4
+  //- a.text-xs.text-right.mb-2.flex.items-center.gap-1.justify-end(
+  //-   class="hover:underline"
+  //-    href="mailto:hi@dovahkiin.top") 
+  //-   icon.size-4(icon="carbon:email")
+  //-   span hi@dovahkiin.top    
+  //- a.text-xs.text-right.block(target="_blank" href="https://x.com/CureDovahkiin" referrerpolicy="no-referrer") @CureDovahkiin
 </template>
 <script setup lang="ts">
 import { Icon ,addIcon } from "@iconify/vue";

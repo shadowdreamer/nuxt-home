@@ -3,11 +3,13 @@ SiteNav
 main(class='container mx-auto')
   NuxtPage
   ClientOnly
-    Comment
-    
+    div(class="w-[75%] max-w-[1444px] mx-auto")
+      Comment
+    .h-20
+Footer
+  
 </template>
 <script setup lang="ts">
-usePinNavi();
-
+ 
 </script>
 <style></style>

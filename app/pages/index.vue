@@ -1,5 +1,9 @@
 <template lang="pug">
-.grid.grid-cols-1.gap-4
+
+.grid.grid-cols-1.gap-4(class="w-full md:w-[75%] max-w-[1444px] mx-auto")
+  div
+    h1.text-3xl.font-bold.mb-2 博客
+    p.text-lg.text-gray-600.mb-4 我的文章
   NuxtLink.post-link.group(v-for="post in home" :key="post.path" :to="post.path" )
     .back.bg-texture.-z-1.border.border-takane33
     .overflow-hidden.bg-white.border.border-gray-300.z-1.front
@@ -25,7 +29,7 @@ const { data: home } = await useAsyncData(() =>
   &:hover {
     .front{
       @apply transition-all;
-      transform: translate(-8px,8px);
+      transform: translate(-8px,-8px);
     }
     .back{
       @apply transition-all;
