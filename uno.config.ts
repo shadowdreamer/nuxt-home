@@ -1,11 +1,11 @@
 import { defineConfig, presetWind3 } from 'unocss'
 import transformerDirectives from '@unocss/transformer-directives'
 import extractorPug from '@unocss/extractor-pug'
-import { blackA, green, grass, mauve,whiteA } from '@radix-ui/colors'
+import { blackA,  whiteA } from '@radix-ui/colors'
 
 export default defineConfig({
   presets: [
-    presetWind3(),
+    presetWind3( ),
   ],
   transformers: [
     transformerDirectives(),
@@ -20,9 +20,6 @@ export default defineConfig({
     },
     colors: {
       blackA,
-      green,
-      grass,
-      mauve,
       whiteA,
       takane:'#a6126a',
       takane33:'var(--color-takane33)',

@@ -1,5 +1,6 @@
 <template lang="pug">
-.py-12(v-if="data")
+.pt-20.pb-10(v-if="data" class="w-full md:w-[75%] max-w-[1444px] mx-auto")
+  SideBack
   h2.text-2xl.font-semibold.mb-2 {{data?.title}}
   p.mb-8.text-gray-500.text-sm {{data?.meta.date}}
   ContentRenderer(v-if="data" :value="data" class='blog') 

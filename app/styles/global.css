@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Color+Emoji&display=swap');
 @import '@unocss/reset/tailwind.css';
 
-html,body{
-  color:#333333;
-  line-height: 1.5em;
-  font-weight: 400; 
-  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility; 
-  word-break: break-word; 
-}
 :root {
   --main-width: 1440px;
   --main-min-width: 1440px;
   --color-takane33:#a6126b33;
+}
+
+html {
+  @apply transition-colors duration-300;
+}
+
+body {
+  @apply text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900;
+  @apply leading-normal font-normal;
+  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; 
+  word-break: break-word;
 }
  
 

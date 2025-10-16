@@ -2,7 +2,7 @@
 
 .flex.gap-4.mb-4
   a.flex.flex-col.items-center.gap-1.p-2.rounded-md.w-14(
-    class="hover:bg-gray-100"
+    class="hover:bg-gray-100 dark:hover:bg-gray-700"
       v-for="item in socials" target="_blank" :href="item.href")
     Icon.size-6(:icon="item.logo")
     .text-xs.whitespace-nowrap {{ item.name }}

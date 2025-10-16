@@ -1,5 +1,4 @@
 .blog{
-  @apply text-gray-600;
   h1{
     @apply text-2xl font-semibold mt-10 mb-4;
   }
@@ -10,13 +9,13 @@
     @apply text-lg font-semibold mt-10 mb-4;
   }
   h4{
-    @apply text-lg  mt-10 mb-4;
+    @apply text-lg mt-10 mb-4;
   }
   p {
-    @apply leading-loose first-letter:ml-8 mb-2
+    @apply leading-loose first-letter:ml-8 mb-2;
   }
   blockquote{
-    @apply text-sm  bg-gray-50 p-2 my-2 border-gray-300 first-letter:pl-0;
+    @apply text-sm   p-2 my-2 border-gray-300 dark:border-gray-700 first-letter:pl-0;
   }
   ul{
     @apply list-disc pl-8 mb-10; 
@@ -28,24 +27,20 @@
     @apply mb-2; 
   }
   a{
-    @apply text-takane; 
+    @apply text-takane dark:text-blue-400; 
     &:hover{
       @apply underline underline-offset-4;
     }
   }
   th{
-    @apply border border-gray-300 px-4 py-2;
+    @apply border border-gray-300 dark:border-gray-700 px-4 py-2;
    }
    td{
-    @apply border border-gray-300 px-4 py-2; 
+    @apply border border-gray-300 dark:border-gray-700 px-4 py-2; 
    }
    pre{
-    code{
-      @apply bg-gray-100 p-4 rounded-sm block;
-    }
+     code{
+       @apply  bg-takane/10  p-4 rounded-sm block rounded-md;
+     }
    }
-   code{
-    @apply bg-gray-100 p-1 rounded-sm;
-   }
-
 }

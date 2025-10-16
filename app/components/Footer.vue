@@ -14,10 +14,20 @@ footer.text-gray-400.container.py-10
       
       p.font-mono 
         | Hand made with Nuxt.js & Tailwindcss Powered on NuxtHub. 
-        NuxtLink(to="/diary"  class="text-black/8 hover:underline cursor-text") Diary
+        span(@click="handleTripleClick()" class="text-black/8 cursor-text select-none") Diary
 </template>
 <script setup lang="ts">
 import { Icon  } from "@iconify/vue";
+// click 3 times junp to /diary
+let clickCount = 0
+const handleTripleClick = () => {
+  clickCount++
+  if (clickCount === 3) {
+    navigateTo('/diary')
+    clickCount = 0
+  }
+  setTimeout(() => (clickCount = 0), 500)
+}
 
 </script>
 <style>

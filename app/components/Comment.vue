@@ -10,7 +10,7 @@ Giscus(
   reactions-enabled="1"
   emit-metadata="0"
   input-position="top"
-  theme="light"
+  :theme="isDark ? 'dark' : 'light'"
   lang="zh-CN"
   loading="lazy"
   crossorigin="anonymous"
@@ -20,7 +20,7 @@ Giscus(
 import Giscus from "@giscus/vue";
 const isProd = import.meta.env.PROD;
 import ScrollTrigger from "gsap/ScrollTrigger";
-
+const { isDark } = useDarkMode();
 onMounted(()=>{
   function handleMessage(event: MessageEvent) {
     if (event.origin !== 'https://giscus.app') return;
