@@ -1,5 +1,5 @@
 <template lang="pug">
-.w-full.text-lg.italic(class="first-letter:text-4xl font-mono")
+.text-lg.italic(class="first-letter:text-4xl font-mono w-[75%] max-w-[1444px] mx-auto")
   p.mb-2 I don’t know myself—just a commit lost between branches that never merged.
   p.mb-2 Frameworks rise and fall like forgotten empires, each leaving a syntax I no longer speak.
   p.mb-2 Once, I believed in a single source of truth, but now even my state is scattered.
