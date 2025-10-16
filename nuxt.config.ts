@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         // { rel: 'icon', type: 'image/svg+xml', href: '/nuxt.svg' },
         // { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
       ],
-      title:' Fishing',
+      title:' SOS - Sekai ni Ore no Sonzai o shoumei suru',
       script:[
       ],
       meta: [

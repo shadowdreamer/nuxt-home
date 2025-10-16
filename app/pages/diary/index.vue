@@ -1,5 +1,8 @@
 <template lang="pug">
-.grid.grid-cols-1.gap-4
+.grid.grid-cols-1.gap-4(class="w-full md:w-[75%] max-w-[1444px] mx-auto")
+  div
+    h1.text-2xl.font-bold.mb-2 YOU FIND ME
+    p.text-sm.text-gray-600.mb-4 这里是我一直埋在心底的想法与经历，对能点到这里的你说下谢谢
   NuxtLink.post-link.group(v-for="post in home" :key="post.path" :to="post.path" )
     .back.bg-texture.-z-1.border.border-takane33
     .overflow-hidden.bg-white.border.border-gray-300.z-1.front

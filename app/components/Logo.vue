@@ -20,7 +20,7 @@ TooltipProvider(
               | re no
             p 
               span.underline S
-              | onzai o shirasero!
+              | onzai o shoumei suru
 </template>
 
 <script setup lang="ts">
